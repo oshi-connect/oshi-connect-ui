@@ -1,0 +1,4642 @@
+{
+  "version": "2.13",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Bitrv",
+      "x": 0,
+      "y": 0,
+      "name": "Miruv Design System",
+      "width": 1200,
+      "fill": "$color-bg",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 48,
+      "children": [
+        {
+          "type": "text",
+          "id": "m3JF3",
+          "name": "title",
+          "fill": "$color-text",
+          "content": "Miruv design system",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-3xl",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "text",
+          "id": "XD79b",
+          "name": "secColors",
+          "fill": "$color-text",
+          "content": "Semantic colors",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-lg",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "zvhN7",
+          "name": "row1",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "3QGwp",
+              "name": "sw1",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "8Tvls",
+                  "name": "sq1",
+                  "fill": "$color-primary",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "tL8Cl",
+                  "name": "lb1",
+                  "fill": "$color-text-muted",
+                  "content": "Primary",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NjGso",
+              "name": "sw2",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "5g7mE",
+                  "name": "sq2",
+                  "fill": "$color-secondary",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "Av4wA",
+                  "name": "lb2",
+                  "fill": "$color-text-muted",
+                  "content": "Secondary",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ebTeF",
+              "name": "sw3",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "y8vnn",
+                  "name": "sq3",
+                  "fill": "$color-accent",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "PK7XV",
+                  "name": "lb3",
+                  "fill": "$color-text-muted",
+                  "content": "Accent",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PtboZ",
+              "name": "sw4",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "zCTn2",
+                  "name": "sq4",
+                  "fill": "$color-neutral",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "HsZE1",
+                  "name": "lb4",
+                  "fill": "$color-text-muted",
+                  "content": "Neutral",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bqZnz",
+          "name": "row2",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Sb5nR",
+              "name": "sw5",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "yCquU",
+                  "name": "sq5",
+                  "fill": "$color-success",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "8gSAl",
+                  "name": "lb5",
+                  "fill": "$color-text-muted",
+                  "content": "Success",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VmtEe",
+              "name": "sw6",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "C4zz5",
+                  "name": "sq6",
+                  "fill": "$color-warning",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "LxaZ2",
+                  "name": "lb6",
+                  "fill": "$color-text-muted",
+                  "content": "Warning",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "S6i6d",
+              "name": "sw7",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "1mFsA",
+                  "name": "sq7",
+                  "fill": "$color-error",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "RZ0pf",
+                  "name": "lb7",
+                  "fill": "$color-text-muted",
+                  "content": "Error",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "apt4V",
+              "name": "sw8",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "Bg6r4",
+                  "name": "sq8",
+                  "fill": "$color-surface",
+                  "width": 80,
+                  "height": 80,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner"
+                },
+                {
+                  "type": "text",
+                  "id": "03NBl",
+                  "name": "lb8",
+                  "fill": "$color-text-muted",
+                  "content": "Surface",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F8a0b",
+              "name": "sw9",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 16,
+                  "id": "bTJAK",
+                  "name": "sq9",
+                  "fill": "$color-border",
+                  "width": 80,
+                  "height": 80
+                },
+                {
+                  "type": "text",
+                  "id": "1cKVj",
+                  "name": "lb9",
+                  "fill": "$color-text-muted",
+                  "content": "Border",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "lrhqX",
+          "name": "secType",
+          "fill": "$color-text",
+          "content": "Typography (Nunito)",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-lg",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "KUkhs",
+          "name": "typeStack",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "dNqOO",
+              "name": "t4",
+              "fill": "$color-text",
+              "content": "4xl — Stream goes live",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-4xl",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "isQtK",
+              "name": "t3",
+              "fill": "$color-text",
+              "content": "2xl — Section title",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-2xl",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "j31UZ",
+              "name": "t2",
+              "fill": "$color-text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Base — Body text for tickets, chat, and event copy.",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-base",
+              "fontWeight": "$weight-normal"
+            },
+            {
+              "type": "text",
+              "id": "SgioY",
+              "name": "txs",
+              "fill": "$color-text-muted",
+              "content": "xs — helper & meta",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-xs",
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "ztXJ4",
+          "name": "secTok",
+          "fill": "$color-text",
+          "content": "Radius & spacing (tokens)",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-lg",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "ERApC",
+          "name": "tokRow",
+          "gap": 16,
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 8,
+              "id": "pyRTi",
+              "name": "r1",
+              "fill": "$color-primary",
+              "width": 40,
+              "height": 40
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 12,
+              "id": "5u26v",
+              "name": "r2",
+              "fill": "$color-secondary",
+              "width": 40,
+              "height": 40
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 16,
+              "id": "HeRs0",
+              "name": "r3",
+              "fill": "$color-accent",
+              "width": 40,
+              "height": 40
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 24,
+              "id": "kB6Rd",
+              "name": "r4",
+              "fill": "$color-neutral",
+              "width": 40,
+              "height": 40
+            },
+            {
+              "type": "text",
+              "id": "bKrAf",
+              "name": "spLbl",
+              "fill": "$color-text-muted",
+              "content": "sm · md · lg · xl",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-xs",
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "cQ6s8",
+          "name": "secComp",
+          "fill": "$color-text",
+          "content": "Reusable components",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-lg",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "qUZsr",
+          "name": "symStrip",
+          "gap": 28,
+          "children": [
+            {
+              "type": "frame",
+              "id": "NtHob",
+              "name": "DS / Button",
+              "reusable": true,
+              "fill": "$color-primary",
+              "cornerRadius": 12,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#C8488833",
+                "offset": {
+                  "x": 0,
+                  "y": 3
+                },
+                "blur": 12
+              },
+              "gap": 8,
+              "padding": [
+                14,
+                22
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MoAgL",
+                  "name": "btnLbl",
+                  "fill": "$color-on-primary",
+                  "content": "Primary",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aGns3",
+              "name": "DS / Input",
+              "reusable": true,
+              "width": 260,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "81E6v",
+                  "name": "inLab",
+                  "fill": "$color-text",
+                  "content": "Email",
+                  "fontFamily": "Nunito",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "6NAXM",
+                  "name": "inFld",
+                  "fill": "$color-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p2FDH",
+                      "name": "inPh",
+                      "fill": "$color-text-muted",
+                      "content": "you@example.com",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "iCAmX",
+                  "name": "inHp",
+                  "fill": "$color-text-muted",
+                  "content": "Helper under the field",
+                  "fontFamily": "Nunito",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "51cUY",
+              "name": "DS / Badge",
+              "reusable": true,
+              "fill": "$color-accent",
+              "cornerRadius": 999,
+              "gap": 4,
+              "padding": [
+                6,
+                12
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "04Sqd",
+                  "name": "bdTx",
+                  "fill": "$color-on-accent",
+                  "content": "LIVE",
+                  "fontFamily": "Nunito",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dz8en",
+              "name": "DS / Card",
+              "reusable": true,
+              "width": 300,
+              "fill": "$color-surface",
+              "cornerRadius": 16,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#1F152820",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 28
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 22,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Tu5sC",
+                  "name": "cdHd",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r4mCI",
+                      "name": "cdTi",
+                      "fill": "$color-text",
+                      "content": "Ticket tier",
+                      "fontFamily": "Nunito",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "t0dsM",
+                  "name": "cdBd",
+                  "fill": "$color-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Soft elevation, rounded frame, header + body. Footer slot in implementation.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tG1pA",
+              "name": "DS / Spinner",
+              "reusable": true,
+              "width": 44,
+              "height": 44,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "OyiuC",
+                  "name": "spIc",
+                  "width": 30,
+                  "height": 30,
+                  "icon": "loader-circle",
+                  "library": "lucide",
+                  "fill": "$color-primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QvSNU",
+              "name": "DS / Avatar",
+              "reusable": true,
+              "clip": true,
+              "width": 52,
+              "height": 52,
+              "fill": "$color-secondary",
+              "cornerRadius": 999,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "37kba",
+                  "name": "avTx",
+                  "fill": "$color-on-secondary",
+                  "content": "MT",
+                  "fontFamily": "Nunito",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "bv46c",
+          "name": "galHdr",
+          "fill": "$color-text",
+          "content": "Button variants (instances)",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-base",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "k0JrG",
+          "name": "galRow1",
+          "gap": 14,
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "cb5Jb",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "b1",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Primary"
+                }
+              }
+            },
+            {
+              "id": "78xwV",
+              "type": "ref",
+              "ref": "NtHob",
+              "fill": "$color-secondary",
+              "name": "b2",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Secondary",
+                  "fill": "$color-on-secondary"
+                }
+              }
+            },
+            {
+              "id": "BOB1n",
+              "type": "ref",
+              "ref": "NtHob",
+              "fill": "#00000000",
+              "stroke": "$color-primary",
+              "name": "b3",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "enabled": false,
+                "color": "#00000000"
+              },
+              "strokeWidth": 2,
+              "strokeLinejoin": "miter",
+              "strokeLinecap": "butt",
+              "strokeAlignment": "inner",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Ghost",
+                  "fill": "$color-primary"
+                }
+              }
+            },
+            {
+              "id": "zWMFJ",
+              "type": "ref",
+              "ref": "NtHob",
+              "fill": "$color-error",
+              "name": "b4",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Danger",
+                  "fill": "$color-on-error"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "YXpJt",
+          "name": "galHdr2",
+          "fill": "$color-text",
+          "content": "Badge variants",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-base",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "Ildn5",
+          "name": "galRow2",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "ps96P",
+              "type": "ref",
+              "ref": "51cUY",
+              "fill": "$color-primary",
+              "name": "bg1",
+              "descendants": {
+                "04Sqd": {
+                  "content": "Primary",
+                  "fill": "$color-on-primary"
+                }
+              }
+            },
+            {
+              "id": "7XduY",
+              "type": "ref",
+              "ref": "51cUY",
+              "fill": "$color-neutral",
+              "name": "bg2",
+              "descendants": {
+                "04Sqd": {
+                  "content": "Neutral",
+                  "fill": "$color-on-neutral"
+                }
+              }
+            },
+            {
+              "id": "8uVXW",
+              "type": "ref",
+              "ref": "51cUY",
+              "fill": "$color-success",
+              "name": "bg3",
+              "descendants": {
+                "04Sqd": {
+                  "content": "Success",
+                  "fill": "$color-on-success"
+                }
+              }
+            },
+            {
+              "id": "qDjQ3",
+              "type": "ref",
+              "ref": "51cUY",
+              "fill": "$color-warning",
+              "name": "bg4",
+              "descendants": {
+                "04Sqd": {
+                  "content": "Warning",
+                  "fill": "$color-on-warning"
+                }
+              }
+            },
+            {
+              "id": "64PES",
+              "type": "ref",
+              "ref": "51cUY",
+              "fill": "$color-error",
+              "name": "bg5",
+              "descendants": {
+                "04Sqd": {
+                  "content": "Error",
+                  "fill": "$color-on-error"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "ftuXJ",
+          "name": "galHdr3",
+          "fill": "$color-text",
+          "content": "Input validation",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-base",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "LWA7G",
+          "name": "galRow3",
+          "gap": 24,
+          "children": [
+            {
+              "id": "d9uWf",
+              "type": "ref",
+              "ref": "aGns3",
+              "name": "inOk"
+            },
+            {
+              "id": "UaNQA",
+              "type": "ref",
+              "ref": "aGns3",
+              "name": "inErr",
+              "descendants": {
+                "81E6v": {
+                  "fill": "$color-error"
+                },
+                "6NAXM": {
+                  "stroke": "$color-error",
+                  "strokeWidth": 2,
+                  "strokeLinejoin": "miter",
+                  "strokeLinecap": "butt",
+                  "strokeAlignment": "inner"
+                },
+                "p2FDH": {
+                  "content": "bad@",
+                  "fill": "$color-error"
+                },
+                "iCAmX": {
+                  "content": "That does not look like an email.",
+                  "fill": "$color-error"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "0wW3S",
+          "name": "galHdr4",
+          "fill": "$color-text",
+          "content": "Textarea & select (wireframe)",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-base",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "AGmw6",
+          "name": "galRow4",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "FFCMy",
+              "name": "taBox",
+              "width": 300,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oB2DJ",
+                  "name": "taLb",
+                  "fill": "$color-text",
+                  "content": "Message",
+                  "fontFamily": "Nunito",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "80ZDL",
+                  "name": "taAr",
+                  "width": "fill_container",
+                  "height": 100,
+                  "fill": "$color-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2urAV",
+                      "name": "taTx",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Type here… (max length in implementation)",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1UzsJ",
+              "name": "selBox",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UKEvZ",
+                  "name": "selLb",
+                  "fill": "$color-text",
+                  "content": "Ticket",
+                  "fontFamily": "Nunito",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "zPDQU",
+                  "name": "selFr",
+                  "fill": "$color-surface",
+                  "cornerRadius": 12,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fgJd4",
+                      "name": "selTx",
+                      "fill": "$color-text-muted",
+                      "content": "Select tier…",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "wi6Cc",
+                      "name": "selIc",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "chevron-down",
+                      "library": "lucide",
+                      "fill": "$color-text-muted"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "vT6TM",
+          "name": "note",
+          "fill": "$color-text-muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Modal · Toast · Dropdown: behavior in code (focus trap, portal, keyboard). Visual style follows these tokens.",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-xs",
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "iQJug",
+          "name": "szHdr",
+          "fill": "$color-text",
+          "content": "Button sizes",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-base",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "fEPYk",
+          "name": "szRow",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "yKSaR",
+              "type": "ref",
+              "ref": "NtHob",
+              "padding": [
+                8,
+                14
+              ],
+              "name": "s1",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Small",
+                  "fontSize": 12
+                }
+              }
+            },
+            {
+              "id": "UvlWX",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "s2",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Medium"
+                }
+              }
+            },
+            {
+              "id": "QJn01",
+              "type": "ref",
+              "ref": "NtHob",
+              "padding": [
+                16,
+                28
+              ],
+              "name": "s3",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Large",
+                  "fontSize": 16
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kIMed",
+      "x": -1290,
+      "y": -6,
+      "name": "Dark mode preview",
+      "theme": {
+        "mode": "dark"
+      },
+      "width": 1200,
+      "fill": "$color-bg",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 36,
+      "children": [
+        {
+          "type": "text",
+          "id": "wECEE",
+          "name": "dt",
+          "fill": "$color-text",
+          "content": "Dark mode — same variables, mode=dark",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-lg",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "ZfI12",
+          "name": "dr",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "LYB5Z",
+              "name": "dw1",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 14,
+                  "id": "cUgqq",
+                  "name": "dq1",
+                  "fill": "$color-primary",
+                  "width": 72,
+                  "height": 72
+                },
+                {
+                  "type": "text",
+                  "id": "rbsWX",
+                  "name": "dl1",
+                  "fill": "$color-text-muted",
+                  "content": "Primary",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ni5CC",
+              "name": "dw2",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 14,
+                  "id": "Opf4h",
+                  "name": "dq2",
+                  "fill": "$color-surface",
+                  "width": 72,
+                  "height": 72
+                },
+                {
+                  "type": "text",
+                  "id": "QcdWN",
+                  "name": "dl2",
+                  "fill": "$color-text-muted",
+                  "content": "Surface",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uoRXR",
+              "name": "dw3",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 14,
+                  "id": "t3iyB",
+                  "name": "dq3",
+                  "fill": "$color-secondary",
+                  "width": 72,
+                  "height": 72
+                },
+                {
+                  "type": "text",
+                  "id": "baB94",
+                  "name": "dl3",
+                  "fill": "$color-text-muted",
+                  "content": "Secondary",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xs",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "id": "Xgiop",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "dBtn",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Button"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ctuDM",
+          "name": "darkBlk",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            20,
+            0,
+            0,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "J7zba",
+              "name": "dh",
+              "fill": "$color-text",
+              "content": "MOK-33 · Step 9 (dark)",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "frame",
+              "id": "827rI",
+              "name": "dr9",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "LKgBY",
+                  "type": "ref",
+                  "ref": "mfLZw",
+                  "width": "fill_container",
+                  "name": "dPl",
+                  "descendants": {
+                    "ZwWth": {
+                      "content": "Tokimeki Teatime"
+                    }
+                  }
+                },
+                {
+                  "id": "Xke8j",
+                  "type": "ref",
+                  "ref": "dLZ5t",
+                  "name": "dCh",
+                  "descendants": {
+                    "qhoZb/26yVA": {
+                      "content": "Phteve"
+                    },
+                    "qhoZb/hoHGr": {
+                      "content": "waku waku"
+                    },
+                    "ePNW7/26yVA": {
+                      "content": "sakana"
+                    },
+                    "ePNW7/hoHGr": {
+                      "content": "where is my coffee"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Sa1m6",
+      "x": 1300,
+      "y": 60,
+      "name": "DS / ChatMessageRow",
+      "reusable": true,
+      "width": 360,
+      "gap": 6,
+      "padding": [
+        3,
+        8
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "eah5j",
+          "name": "col",
+          "width": "fill_container",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "26yVA",
+              "name": "nm",
+              "fill": "#6B5B7A",
+              "content": "Viewer name",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "hoHGr",
+              "name": "msg",
+              "fill": "#1F1528",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Chat message body for the live room.",
+              "lineHeight": 1.4,
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tWjUM",
+      "x": 1300,
+      "y": 160,
+      "name": "DS / ChatComposer",
+      "reusable": true,
+      "width": 360,
+      "gap": 10,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "1lFyV",
+          "name": "fld",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "$color-surface",
+          "cornerRadius": 12,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "padding": [
+            12,
+            14
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "9FtLD",
+              "name": "ph",
+              "fill": "$color-text-muted",
+              "content": "Message the stream…",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "id": "3cDOJ",
+          "type": "ref",
+          "ref": "NtHob",
+          "name": "sendBtn",
+          "descendants": {
+            "MoAgL": {
+              "content": "Send"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mfLZw",
+      "x": 1300,
+      "y": 280,
+      "name": "DS / StreamPlayerChrome",
+      "reusable": true,
+      "width": 720,
+      "layout": "vertical",
+      "gap": 10,
+      "children": [
+        {
+          "type": "frame",
+          "id": "6kRyo",
+          "name": "top",
+          "width": "fill_container",
+          "gap": 10,
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "j4c8B",
+              "type": "ref",
+              "ref": "51cUY",
+              "name": "bd",
+              "descendants": {
+                "04Sqd": {
+                  "content": "LIVE"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "ZwWth",
+              "name": "ttl",
+              "fill": "$color-text",
+              "content": "Event stream title",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-base",
+              "fontWeight": "$weight-semibold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5qrdD",
+          "name": "stg",
+          "width": 720,
+          "height": 405,
+          "fill": "$color-neutral",
+          "cornerRadius": 12
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dLZ5t",
+      "x": 1300,
+      "y": 1052,
+      "name": "DS / ChatPanel",
+      "reusable": true,
+      "clip": true,
+      "width": 392,
+      "fill": "$color-surface",
+      "cornerRadius": 16,
+      "stroke": "$color-border",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "3YDsi",
+          "name": "hdr",
+          "width": "fill_container",
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "padding": [
+            14,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ZQDyh",
+              "name": "ht",
+              "fill": "$color-text",
+              "content": "Live chat",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "URI1R",
+              "name": "hc",
+              "fill": "$color-text-muted",
+              "content": "1.2k watching",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-xs",
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x4RDA",
+          "name": "msgs",
+          "width": "fill_container",
+          "height": 340,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "id": "qhoZb",
+              "type": "ref",
+              "ref": "Sa1m6",
+              "name": "m1",
+              "descendants": {
+                "26yVA": {
+                  "content": "Yuki"
+                },
+                "hoHGr": {
+                  "content": "So excited for this stream!"
+                }
+              }
+            },
+            {
+              "id": "Hqvzr",
+              "type": "ref",
+              "ref": "Sa1m6",
+              "name": "m2",
+              "descendants": {
+                "26yVA": {
+                  "content": "Mod"
+                },
+                "hoHGr": {
+                  "content": "Welcome everyone — chat rules are in the info panel."
+                }
+              }
+            },
+            {
+              "id": "ePNW7",
+              "type": "ref",
+              "ref": "Sa1m6",
+              "name": "m3",
+              "descendants": {
+                "26yVA": {
+                  "content": "Ren"
+                },
+                "hoHGr": {
+                  "content": "GG!"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xR6qO",
+          "name": "compRow",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": 14,
+          "children": [
+            {
+              "id": "VqKN7",
+              "type": "ref",
+              "ref": "tWjUM",
+              "name": "compInst"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lqCLl",
+      "x": 0,
+      "y": 2017,
+      "name": "MOK-33 — Viewer flow",
+      "width": 1322,
+      "fill": "$color-bg",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 48,
+      "children": [
+        {
+          "type": "text",
+          "id": "uuBYm",
+          "name": "intro",
+          "fill": "$color-text",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "MOK-33 · Main viewer happy path — walk screens top to bottom.",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-lg",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "text",
+          "id": "DKHXH",
+          "name": "sub",
+          "fill": "$color-text-muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Event → ticket → OAuth → hosted checkout → return → event (ticket held) → theater → live + chat.",
+          "lineHeight": 1.45,
+          "fontFamily": "Nunito",
+          "fontSize": "$text-sm",
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "cHUGF",
+          "name": "Step 1 — Event (public)",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "frame",
+              "id": "1w9Fv",
+              "name": "row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1XYD8",
+                  "name": "cov",
+                  "width": 400,
+                  "height": 240,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../tokimeki-teatime.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "S8cfc",
+                  "name": "col",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8i3cG",
+                      "name": "tit",
+                      "fill": "$color-text",
+                      "content": "Tokimeki Teatime",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-2xl",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ida89",
+                      "name": "meta",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "KnmjE",
+                          "type": "ref",
+                          "ref": "51cUY",
+                          "name": "badge",
+                          "descendants": {
+                            "04Sqd": {
+                              "content": "LIVE"
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "id": "W4ZKH",
+                          "name": "metaTxt",
+                          "fill": "$color-text-muted",
+                          "content": "Sat Apr 12 · 20:00 GMT",
+                          "fontFamily": "Nunito",
+                          "fontSize": "$text-sm",
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "VqJpx",
+                      "type": "ref",
+                      "ref": "NtHob",
+                      "name": "btn",
+                      "descendants": {
+                        "MoAgL": {
+                          "content": "Buy ticket"
+                        }
+                      }
+                    },
+                    {
+                      "id": "p8wQx",
+                      "type": "ref",
+                      "ref": "dz8en",
+                      "width": "fill_container",
+                      "name": "about",
+                      "descendants": {
+                        "r4mCI": {
+                          "content": "About this stream"
+                        },
+                        "t0dsM": {
+                          "content": "Watch the show, catch up on cast interviews and chat with the audience!",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2RJKN",
+          "name": "Step 2 — Buy ticket",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "text",
+              "id": "16ECh",
+              "name": "hdr2",
+              "fill": "$color-text",
+              "content": "Choose your ticket",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-2xl",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "frame",
+              "id": "ZnOaZ",
+              "name": "r2",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "TDGBN",
+                  "type": "ref",
+                  "ref": "dz8en",
+                  "width": "fill_container",
+                  "name": "tc1",
+                  "descendants": {
+                    "r4mCI": {
+                      "content": "Regular"
+                    },
+                    "t0dsM": {
+                      "content": "HD stream access · £10 incl. VAT",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container"
+                    }
+                  }
+                },
+                {
+                  "id": "HG0uH",
+                  "type": "ref",
+                  "ref": "dz8en",
+                  "width": "fill_container",
+                  "name": "tc2",
+                  "descendants": {
+                    "r4mCI": {
+                      "content": "VIP"
+                    },
+                    "t0dsM": {
+                      "content": "HD + supporter badge · £20 incl. VAT",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "Y1AQ6",
+              "type": "ref",
+              "ref": "aGns3",
+              "width": 440,
+              "name": "promo",
+              "descendants": {
+                "81E6v": {
+                  "content": "Promo code (optional)"
+                },
+                "iCAmX": {
+                  "content": ""
+                }
+              }
+            },
+            {
+              "id": "oIX0M",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "ct2",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Continue to checkout"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LUnPL",
+          "name": "Step 3 — Sign in",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "text",
+              "id": "II40J",
+              "name": "h3",
+              "fill": "$color-text",
+              "content": "Sign in to continue",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-2xl",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "Gw5o6",
+              "name": "s3",
+              "fill": "$color-text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "We use your account provider to verify identity and reduce abuse.",
+              "lineHeight": 1.45,
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "normal"
+            },
+            {
+              "id": "tBxUc",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "dc",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Continue with Discord"
+                }
+              }
+            },
+            {
+              "id": "8tYxd",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "oBtn",
+              "fill": "#00000000",
+              "stroke": "$color-primary",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "enabled": false,
+                "color": "#00000000"
+              },
+              "strokeWidth": 2,
+              "strokeLinejoin": "miter",
+              "strokeLinecap": "butt",
+              "strokeAlignment": "inner",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Other sign-in options",
+                  "fill": "$color-primary"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "l3lMA",
+          "name": "Steps 4–5 — Hosted checkout",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "frame",
+              "id": "adeBI",
+              "name": "wrap45",
+              "width": "fill_container",
+              "padding": 8,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tKWmH",
+                  "name": "box45",
+                  "width": 560,
+                  "fill": "$color-bg",
+                  "cornerRadius": 16,
+                  "stroke": "$color-border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "padding": 36,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "32ucw",
+                      "name": "t45a",
+                      "fill": "$color-text",
+                      "content": "Complete payment",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-2xl",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WRDHs",
+                      "name": "t45b",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Hosted checkout opens in your browser. The payment provider handles cards, wallets, and receipts.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "igYKM",
+                      "name": "t45c",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "After success, you will be redirected back to Miruv to confirm access.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oBsE1",
+          "name": "Step 6 — Payment confirmed",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "id": "WgzWS",
+              "type": "ref",
+              "ref": "51cUY",
+              "fill": "$color-success",
+              "name": "bdg6",
+              "descendants": {
+                "04Sqd": {
+                  "content": "Paid",
+                  "fill": "$color-on-success"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "vKdQj",
+              "name": "h6",
+              "fill": "$color-text",
+              "content": "You are in — ticket confirmed",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-2xl",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "TyRa0",
+              "name": "p6",
+              "fill": "$color-text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Your purchase is saved. Open the event when the room goes live.\n\n1x VIP ticket",
+              "lineHeight": 1.45,
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "normal"
+            },
+            {
+              "id": "W5iIf",
+              "type": "ref",
+              "ref": "NtHob",
+              "name": "b6",
+              "descendants": {
+                "MoAgL": {
+                  "content": "Go to event"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JtG9W",
+          "name": "Step 7 — Event (ticket held)",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "frame",
+              "id": "y1tqx",
+              "name": "row7",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ApnPj",
+                  "name": "cov7",
+                  "width": 400,
+                  "height": 240,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "../tokimeki-teatime.jpg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "DSREH",
+                  "name": "col7",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W27Ff",
+                      "name": "tit7",
+                      "fill": "$color-text",
+                      "content": "Tokimeki Teatime",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-2xl",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5GkCK",
+                      "name": "meta7",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "Eme1S",
+                          "type": "ref",
+                          "ref": "51cUY",
+                          "name": "bdgL",
+                          "descendants": {
+                            "04Sqd": {
+                              "content": "LIVE"
+                            }
+                          }
+                        },
+                        {
+                          "id": "PVmAF",
+                          "type": "ref",
+                          "ref": "51cUY",
+                          "fill": "$color-neutral",
+                          "name": "bdgT",
+                          "descendants": {
+                            "04Sqd": {
+                              "content": "Ticket purchase",
+                              "fill": "$color-on-neutral"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MFXmU",
+                      "name": "meta7t",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sat Apr 12 · 20:00 GMT · You have access",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "Q0Me2",
+                      "type": "ref",
+                      "ref": "NtHob",
+                      "name": "btn7",
+                      "descendants": {
+                        "MoAgL": {
+                          "content": "Watch live"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZfnvV",
+          "name": "Step 8 — Viewing (theater)",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "text",
+              "id": "q1ypB",
+              "name": "h8",
+              "fill": "$color-text",
+              "content": "Theater — stream surface",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-base",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "I66bS",
+              "name": "s8",
+              "fill": "$color-text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Focus on the player; chat can stay collapsed until step 9.",
+              "lineHeight": 1.45,
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "normal"
+            },
+            {
+              "id": "NaROE",
+              "type": "ref",
+              "ref": "mfLZw",
+              "width": "fill_container",
+              "name": "ply8"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R0uW5",
+          "name": "Step 9 — Live + chat",
+          "width": "fill_container",
+          "height": 720,
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 28,
+          "children": [
+            {
+              "type": "text",
+              "id": "JG7dm",
+              "name": "h9",
+              "fill": "$color-text",
+              "content": "Live room — player + chat",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-base",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "frame",
+              "id": "nIBuy",
+              "name": "row9",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "frNPK",
+                  "type": "ref",
+                  "ref": "mfLZw",
+                  "width": "fill_container",
+                  "name": "pl9"
+                },
+                {
+                  "id": "xrpsJ",
+                  "type": "ref",
+                  "ref": "dLZ5t",
+                  "name": "cht9",
+                  "descendants": {
+                    "qhoZb/26yVA": {
+                      "content": "gigi67"
+                    },
+                    "Hqvzr/26yVA": {
+                      "content": "takumi"
+                    },
+                    "ePNW7/hoHGr": {
+                      "content": "wwwwwwwwww"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "bAzdr",
+      "x": 1300,
+      "y": 820,
+      "name": "DS / CastMemberRow",
+      "reusable": true,
+      "width": 400,
+      "gap": 12,
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "FffoJ",
+          "type": "ref",
+          "ref": "QvSNU",
+          "name": "cAv",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "frame",
+          "id": "bVPFC",
+          "name": "col",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "type": "text",
+              "id": "ETyrs",
+              "name": "cNm",
+              "fill": "$color-text",
+              "content": "Cast name",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "frame",
+              "id": "pG2Bt",
+              "name": "soc",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "tSgTo",
+                  "name": "icYt",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "youtube",
+                  "library": "lucide",
+                  "fill": "$color-text-muted"
+                },
+                {
+                  "type": "icon",
+                  "id": "5E3Iq",
+                  "name": "icTw",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "twitch",
+                  "library": "lucide",
+                  "fill": "$color-text-muted"
+                },
+                {
+                  "type": "icon",
+                  "id": "j7KLr",
+                  "name": "icX",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "twitter",
+                  "library": "lucide",
+                  "fill": "$color-text-muted"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pbz9k",
+      "x": 3074,
+      "y": 0,
+      "name": "DS / Events list (thumbnails)",
+      "clip": true,
+      "width": 744,
+      "fill": "$color-bg",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 40,
+      "children": [
+        {
+          "type": "text",
+          "id": "V2W2kA",
+          "fill": "$color-text",
+          "content": "Events",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-2xl",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "text",
+          "id": "A2GeQ",
+          "fill": "$color-text-muted",
+          "content": "Browse upcoming and live shows.",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-sm",
+          "fontWeight": "$weight-normal"
+        },
+        {
+          "type": "text",
+          "id": "l55AsV",
+          "fill": "$color-text-muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Proposed: a 16:9 thumbnail tops each card; a LIVE badge overlays when the event is live; a gradient + calendar icon stands in when there is no thumbnail.",
+          "lineHeight": 1.5,
+          "fontFamily": "Nunito",
+          "fontSize": "$text-xs",
+          "fontWeight": "$weight-normal"
+        },
+        {
+          "type": "frame",
+          "id": "UY2tJ",
+          "name": "row1",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "k0x2nD",
+              "name": "eventCard",
+              "clip": true,
+              "width": 320,
+              "fill": "$color-surface",
+              "cornerRadius": 16,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#1F152820",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 28
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L641jZ",
+                  "name": "media",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 115,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FF7EB8",
+                        "position": 0
+                      },
+                      {
+                        "color": "#7EB5E8",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "aXPiD",
+                      "type": "ref",
+                      "ref": "51cUY",
+                      "name": "liveBadge",
+                      "x": 12,
+                      "y": 12,
+                      "fill": "$color-error",
+                      "descendants": {
+                        "04Sqd": {
+                          "content": "LIVE",
+                          "fill": "$color-on-error"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z1BZkc",
+                  "name": "content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18,
+                    18,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ebWut",
+                      "fill": "$color-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aqua's Birthday Live",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-lg",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uKHac",
+                      "fill": "$color-text-muted",
+                      "content": "Jun 12, 2026 · 7:00 PM",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-xs",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y5irW",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A special birthday celebration with songs, games, and surprise guests from across the agency.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TVpwD",
+                      "fill": "$color-primary",
+                      "content": "View details",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Uw0ba",
+              "name": "eventCard",
+              "clip": true,
+              "width": 320,
+              "fill": "$color-surface",
+              "cornerRadius": 16,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#1F152820",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 28
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VEvq1",
+                  "name": "media",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 115,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#B388FF",
+                        "position": 0
+                      },
+                      {
+                        "color": "#7EB5E8",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "XGdjo",
+                  "name": "content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18,
+                    18,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E24B9",
+                      "fill": "$color-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Midnight Acoustic Set",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-lg",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "avLTj",
+                      "fill": "$color-text-muted",
+                      "content": "Jun 20, 2026 · 9:00 PM",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-xs",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PE1gW",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "An intimate late-night acoustic stream. Cozy vibes, requests open during the show.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oX07T",
+                      "fill": "$color-primary",
+                      "content": "View details",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "c4gPLa",
+          "name": "row2",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Y3FGU",
+              "name": "eventCard",
+              "clip": true,
+              "width": 320,
+              "fill": "$color-surface",
+              "cornerRadius": 16,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#1F152820",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 28
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o81A2",
+                  "name": "media",
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 115,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "$color-surface-elevated",
+                        "position": 0
+                      },
+                      {
+                        "color": "$color-border",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "JOVNe",
+                      "width": 42,
+                      "height": 42,
+                      "icon": "calendar-days",
+                      "library": "lucide",
+                      "fill": "$color-primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PWwNU",
+                  "name": "content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18,
+                    18,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EP5Yj",
+                      "fill": "$color-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Summer Variety Showcase",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-lg",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EgBvW",
+                      "fill": "$color-text-muted",
+                      "content": "Jul 04, 2026 · 6:00 PM",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-xs",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dX2le",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "No thumbnail yet — falls back to a soft gradient with a calendar icon.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZTb7g",
+                      "fill": "$color-primary",
+                      "content": "View details",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "V7XcfK",
+              "name": "eventCard",
+              "clip": true,
+              "width": 320,
+              "fill": "$color-surface",
+              "cornerRadius": 16,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#1F152820",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 28
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IorUv",
+                  "name": "media",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 115,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FFA94D",
+                        "position": 0
+                      },
+                      {
+                        "color": "#E85D9A",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "CE6uB",
+                  "name": "content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18,
+                    18,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M8nCF",
+                      "fill": "$color-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Collab Tournament Night",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-lg",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "m9El4G",
+                      "fill": "$color-text-muted",
+                      "content": "Jul 11, 2026 · 8:00 PM",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-xs",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FaQPp",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Teams go head to head across three games. Bring your cheers to the live chat.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Octy6",
+                      "fill": "$color-primary",
+                      "content": "View details",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "k1dhJ",
+      "x": 2141,
+      "y": 0,
+      "name": "DS / Event detail (cover)",
+      "clip": true,
+      "width": 744,
+      "fill": "$color-bg",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 40,
+      "children": [
+        {
+          "type": "text",
+          "id": "MQKsO",
+          "fill": "$color-primary",
+          "content": "Back to events",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-sm",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "type": "text",
+          "id": "ktChu",
+          "fill": "$color-text-muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Proposed: the cover image fills the top of the first card, sitting above the title, date, and description.",
+          "lineHeight": 1.5,
+          "fontFamily": "Nunito",
+          "fontSize": "$text-xs",
+          "fontWeight": "$weight-normal"
+        },
+        {
+          "type": "frame",
+          "id": "VVnSy",
+          "name": "eventCard",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#1F152820",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 28
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XFjsb",
+              "name": "cover",
+              "width": "fill_container",
+              "height": 240,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 115,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FF7EB8",
+                    "position": 0
+                  },
+                  {
+                    "color": "#B388FF",
+                    "position": 0.55
+                  },
+                  {
+                    "color": "#7EB5E8",
+                    "position": 1
+                  }
+                ]
+              }
+            },
+            {
+              "type": "frame",
+              "id": "Q5DGd",
+              "name": "content",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bG5jC",
+                  "fill": "$color-text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Aqua's Birthday Live",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-2xl",
+                  "fontWeight": "$weight-semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "TZEQE",
+                  "fill": "$color-text-muted",
+                  "content": "Friday, June 12, 2026 · 7:00 PM",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-normal"
+                },
+                {
+                  "type": "text",
+                  "id": "PUl5h",
+                  "fill": "$color-text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Join us for a special birthday celebration packed with live music, viewer games, and surprise guest appearances. Doors open 15 minutes before the show.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-base",
+                  "fontWeight": "$weight-normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "S0QZGf",
+          "fill": "$color-text-muted",
+          "content": "No cover image → gradient + icon fallback",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-xs",
+          "fontWeight": "$weight-normal"
+        },
+        {
+          "type": "frame",
+          "id": "RMusO",
+          "name": "eventCardFallback",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "$color-surface",
+          "cornerRadius": 16,
+          "stroke": "$color-border",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#1F152820",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 28
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "z4s1b",
+              "name": "cover",
+              "width": "fill_container",
+              "height": 180,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 115,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$color-surface-elevated",
+                    "position": 0
+                  },
+                  {
+                    "color": "$color-border",
+                    "position": 1
+                  }
+                ]
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "gxWaA",
+                  "width": 48,
+                  "height": 48,
+                  "icon": "image",
+                  "library": "lucide",
+                  "fill": "$color-primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ukeym",
+              "name": "content",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "v2iKgV",
+                  "fill": "$color-text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Summer Variety Showcase",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-2xl",
+                  "fontWeight": "$weight-semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "CNKV3",
+                  "fill": "$color-text-muted",
+                  "content": "Saturday, July 4, 2026 · 6:00 PM",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DvZ2K",
+      "x": 1300,
+      "y": 862,
+      "name": "castSec",
+      "width": "fill_container(720)",
+      "layout": "vertical",
+      "gap": 8,
+      "children": [
+        {
+          "type": "text",
+          "id": "ydVsY",
+          "name": "castTitle",
+          "fill": "$color-text",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Cast",
+          "fontFamily": "Nunito",
+          "fontSize": "$text-base",
+          "fontWeight": "$weight-semibold"
+        },
+        {
+          "id": "CJVLZ",
+          "type": "ref",
+          "ref": "bAzdr",
+          "name": "m1",
+          "descendants": {
+            "FffoJ": {
+              "type": "frame",
+              "id": "032DR",
+              "name": "cAv",
+              "clip": true,
+              "width": 52,
+              "height": 52,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../victoria.jpg",
+                "mode": "fill"
+              },
+              "cornerRadius": 999
+            },
+            "ETyrs": {
+              "content": "Victoria Roman"
+            }
+          }
+        },
+        {
+          "id": "VxLtk",
+          "type": "ref",
+          "ref": "bAzdr",
+          "name": "m2",
+          "descendants": {
+            "FffoJ": {
+              "type": "frame",
+              "id": "Q6ROq",
+              "name": "cAv",
+              "clip": true,
+              "width": 52,
+              "height": 52,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "../bonnie.jpg",
+                "mode": "fill"
+              },
+              "cornerRadius": 999
+            },
+            "ETyrs": {
+              "content": "Bonnie Barkswell"
+            },
+            "j7KLr": {
+              "enabled": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nmMy7",
+      "x": 2141,
+      "y": 969,
+      "name": "DS / EventCard",
+      "reusable": true,
+      "clip": true,
+      "width": 320,
+      "fill": "$color-surface",
+      "cornerRadius": 16,
+      "stroke": "$color-border",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#1F152820",
+        "offset": {
+          "x": 0,
+          "y": 10
+        },
+        "blur": 28
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "rfUEI",
+          "name": "media",
+          "clip": true,
+          "width": "fill_container",
+          "height": 180,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 115,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#FF7EB8",
+                "position": 0
+              },
+              {
+                "color": "#7EB5E8",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "none",
+          "children": [
+            {
+              "id": "O2jpe",
+              "type": "ref",
+              "ref": "51cUY",
+              "name": "liveBadge",
+              "x": 14,
+              "y": 14,
+              "enabled": false,
+              "fill": "$color-error",
+              "descendants": {
+                "04Sqd": {
+                  "content": "LIVE",
+                  "fill": "$color-on-error"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VPW7q",
+          "name": "content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "padding": [
+            16,
+            18,
+            18,
+            18
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "OtShU",
+              "name": "title",
+              "fill": "$color-text",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Event title",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-lg",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "text",
+              "id": "hogB6",
+              "name": "date",
+              "fill": "$color-text-muted",
+              "content": "Jun 12, 2026 · 7:00 PM",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-xs",
+              "fontWeight": "$weight-normal"
+            },
+            {
+              "type": "text",
+              "id": "dC8j8",
+              "name": "desc",
+              "fill": "$color-text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A short, friendly description of the upcoming show.",
+              "lineHeight": 1.45,
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "$weight-normal"
+            },
+            {
+              "type": "text",
+              "id": "M4fDy",
+              "name": "link",
+              "fill": "$color-primary",
+              "content": "View details",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "$weight-semibold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "P0j46P",
+      "x": 3957,
+      "y": 0,
+      "name": "DS / Homepage",
+      "clip": true,
+      "width": 1440,
+      "fill": "$color-bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "h3YTl",
+          "name": "nav",
+          "width": "fill_container",
+          "fill": "$color-surface",
+          "stroke": "$color-border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "padding": [
+            22,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "IDNHm",
+              "name": "brand",
+              "fill": "$color-primary",
+              "content": "Miruv",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-2xl",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "frame",
+              "id": "G5TnD",
+              "name": "navRight",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jSMZW",
+                  "name": "Events",
+                  "fill": "$color-text-muted",
+                  "content": "Events",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "rg0uC",
+                  "name": "How it works",
+                  "fill": "$color-text-muted",
+                  "content": "How it works",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "dykrS",
+                  "name": "Help",
+                  "fill": "$color-text-muted",
+                  "content": "Help",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-semibold"
+                },
+                {
+                  "id": "jDab3",
+                  "type": "ref",
+                  "ref": "NtHob",
+                  "name": "signinBtn",
+                  "descendants": {
+                    "MoAgL": {
+                      "content": "Sign in"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "es8Be",
+          "name": "hero",
+          "clip": true,
+          "width": "fill_container",
+          "fill": {
+            "type": "mesh_gradient",
+            "enabled": true,
+            "columns": 2,
+            "rows": 2,
+            "colors": [
+              "#FFE0EF",
+              "#E7DBFB",
+              "#E1ECFB",
+              "#FBE6F2"
+            ],
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          "layout": "vertical",
+          "padding": [
+            76,
+            120,
+            84,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "S3KmNy",
+              "name": "heroRow",
+              "width": "fill_container",
+              "gap": 72,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DKuV6",
+                  "name": "leftCol",
+                  "width": 840,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "YWZIg",
+                      "type": "ref",
+                      "ref": "51cUY",
+                      "name": "eyebrow",
+                      "fill": "$color-accent",
+                      "descendants": {
+                        "04Sqd": {
+                          "content": "VTUBER LIVE EVENTS",
+                          "fill": "$color-on-accent"
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "H8BmWy",
+                      "name": "headline",
+                      "fill": "$color-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Catch your favorite VTubers, live.",
+                      "lineHeight": 1.05,
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": 54,
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cS4Zl",
+                      "name": "sub",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Discover upcoming live streams, grab a ticket, and watch the show with real-time chat — all in one cozy place.",
+                      "lineHeight": 1.5,
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-lg",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XM9Tx",
+                      "name": "ctaRow",
+                      "gap": 14,
+                      "padding": [
+                        8,
+                        0,
+                        0,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "WcLYS",
+                          "type": "ref",
+                          "ref": "NtHob",
+                          "name": "browseBtn",
+                          "descendants": {
+                            "MoAgL": {
+                              "content": "Browse events"
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Bo14Y",
+                          "name": "outlineBtn",
+                          "fill": "$color-surface",
+                          "cornerRadius": 12,
+                          "stroke": "$color-border",
+                          "strokeWidth": 1,
+                          "strokeAlignment": "inner",
+                          "padding": [
+                            14,
+                            22
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uipN9",
+                              "name": "outlineLbl",
+                              "fill": "$color-text",
+                              "content": "How it works",
+                              "fontFamily": "Nunito",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NpHPy",
+          "name": "upcomingSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            56,
+            120,
+            72,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "EkkGy",
+              "name": "upHdr",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vd8z2",
+                  "name": "hdrL",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jnOk8",
+                      "name": "upTitle",
+                      "fill": "$color-text",
+                      "content": "Upcoming events",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-3xl",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ellGr",
+                      "name": "upSub",
+                      "fill": "$color-text-muted",
+                      "content": "Plan your week of live shows.",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-base",
+                      "fontWeight": "$weight-normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "bVwwP",
+                  "name": "viewAll",
+                  "fill": "$color-primary",
+                  "content": "View all events →",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Uu4cW",
+              "name": "gridRow1",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "ojjbU",
+                  "type": "ref",
+                  "ref": "nmMy7",
+                  "name": "Neon Pop Party",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rfUEI": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 115,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FF7EB8",
+                            "position": 0
+                          },
+                          {
+                            "color": "#7EB5E8",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "OtShU": {
+                      "content": "Neon Pop Party"
+                    },
+                    "hogB6": {
+                      "content": "Jul 02, 2026 · 8:00 PM"
+                    },
+                    "dC8j8": {
+                      "content": "High-energy idol pop with a full setlist and live song requests."
+                    }
+                  }
+                },
+                {
+                  "id": "T89jv4",
+                  "type": "ref",
+                  "ref": "nmMy7",
+                  "name": "Pixel Quest Marathon",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rfUEI": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 115,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#7EB5E8",
+                            "position": 0
+                          },
+                          {
+                            "color": "#B388FF",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "OtShU": {
+                      "content": "Pixel Quest Marathon"
+                    },
+                    "hogB6": {
+                      "content": "Jul 09, 2026 · 6:00 PM"
+                    },
+                    "dC8j8": {
+                      "content": "A cozy all-night retro gaming marathon with viewer challenges."
+                    }
+                  }
+                },
+                {
+                  "id": "pU7iy",
+                  "type": "ref",
+                  "ref": "nmMy7",
+                  "name": "Starlight Karaoke",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rfUEI": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 115,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#B388FF",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF7EB8",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "OtShU": {
+                      "content": "Starlight Karaoke"
+                    },
+                    "hogB6": {
+                      "content": "Jul 15, 2026 · 9:30 PM"
+                    },
+                    "dC8j8": {
+                      "content": "Sing-along karaoke night taking requests from the chat."
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rYjGX",
+              "name": "gridRow2",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "zEz4y",
+                  "type": "ref",
+                  "ref": "nmMy7",
+                  "name": "Morning Coffee Chat",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rfUEI": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 115,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#9BC8F5",
+                            "position": 0
+                          },
+                          {
+                            "color": "#FF7EB8",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "OtShU": {
+                      "content": "Morning Coffee Chat"
+                    },
+                    "hogB6": {
+                      "content": "Jul 21, 2026 · 10:00 AM"
+                    },
+                    "dC8j8": {
+                      "content": "A relaxed morning talk stream catching up on the week ahead."
+                    }
+                  }
+                },
+                {
+                  "id": "pRSTA",
+                  "type": "ref",
+                  "ref": "nmMy7",
+                  "name": "Retro Synth Live",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rfUEI": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 115,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#B388FF",
+                            "position": 0
+                          },
+                          {
+                            "color": "#7EB5E8",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "OtShU": {
+                      "content": "Retro Synth Live"
+                    },
+                    "hogB6": {
+                      "content": "Jul 28, 2026 · 8:30 PM"
+                    },
+                    "dC8j8": {
+                      "content": "Synthwave originals and remixes performed live with visuals."
+                    }
+                  }
+                },
+                {
+                  "id": "KfY4z",
+                  "type": "ref",
+                  "ref": "nmMy7",
+                  "name": "Summer Finale Concert",
+                  "width": "fill_container",
+                  "descendants": {
+                    "rfUEI": {
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 115,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#FF7EB8",
+                            "position": 0
+                          },
+                          {
+                            "color": "#B388FF",
+                            "position": 1
+                          }
+                        ]
+                      }
+                    },
+                    "OtShU": {
+                      "content": "Summer Finale Concert"
+                    },
+                    "hogB6": {
+                      "content": "Aug 03, 2026 · 7:00 PM"
+                    },
+                    "dC8j8": {
+                      "content": "The season finale: a full band concert with surprise duets."
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u05Xj",
+          "name": "liveSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            56,
+            120,
+            8,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ek704",
+              "name": "liveHdr",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "hXBlH",
+                  "name": "dot",
+                  "fill": "$color-error",
+                  "width": 12,
+                  "height": 12
+                },
+                {
+                  "type": "text",
+                  "id": "lfPDO",
+                  "name": "liveLbl",
+                  "fill": "$color-text",
+                  "content": "Live now",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-xl",
+                  "fontWeight": "$weight-semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZdNmS",
+              "name": "liveCard",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$color-surface",
+              "cornerRadius": 20,
+              "stroke": "$color-border",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#1F152820",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 28
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "H0AovY",
+                  "name": "liveMedia",
+                  "clip": true,
+                  "width": 560,
+                  "height": 316,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 120,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#FF7EB8",
+                        "position": 0
+                      },
+                      {
+                        "color": "#B388FF",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "id": "v6XMer",
+                      "type": "ref",
+                      "ref": "51cUY",
+                      "name": "liveBadge",
+                      "x": 18,
+                      "y": 18,
+                      "fill": "$color-error",
+                      "descendants": {
+                        "04Sqd": {
+                          "content": "LIVE",
+                          "fill": "$color-on-error"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zguIs",
+                  "name": "liveContent",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 40,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "exQ8A",
+                      "name": "liveTitle",
+                      "fill": "$color-text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sakura Nightfall — Acoustic Special",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-3xl",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IfSn9",
+                      "name": "liveMeta",
+                      "fill": "$color-text-muted",
+                      "content": "Streaming now · 1,248 watching",
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-sm",
+                      "fontWeight": "$weight-semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sz93v",
+                      "name": "liveDesc",
+                      "fill": "$color-text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "An unplugged evening set with fan song requests and a live Q&A. Tickets still available at the door.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Nunito",
+                      "fontSize": "$text-base",
+                      "fontWeight": "$weight-normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NPGZi",
+                      "name": "liveCtaRow",
+                      "gap": 14,
+                      "padding": [
+                        8,
+                        0,
+                        0,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "DrR66",
+                          "type": "ref",
+                          "ref": "NtHob",
+                          "name": "watchBtn",
+                          "descendants": {
+                            "MoAgL": {
+                              "content": "Watch now"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TOccX",
+          "name": "footer",
+          "width": "fill_container",
+          "fill": "$color-surface",
+          "stroke": "$color-border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "padding": [
+            30,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "PVEjt",
+              "name": "footBrand",
+              "fill": "$color-text-muted",
+              "content": "Miruv · VTuber live events & ticketing",
+              "fontFamily": "Nunito",
+              "fontSize": "$text-sm",
+              "fontWeight": "$weight-semibold"
+            },
+            {
+              "type": "frame",
+              "id": "J201Qx",
+              "name": "footRight",
+              "gap": 22,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zw1R9",
+                  "name": "Terms",
+                  "fill": "$color-text-muted",
+                  "content": "Terms",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-normal"
+                },
+                {
+                  "type": "text",
+                  "id": "susoF",
+                  "name": "Privacy",
+                  "fill": "$color-text-muted",
+                  "content": "Privacy",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xVu9j",
+                  "name": "Contact",
+                  "fill": "$color-text-muted",
+                  "content": "Contact",
+                  "fontFamily": "Nunito",
+                  "fontSize": "$text-sm",
+                  "fontWeight": "$weight-normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark"
+    ]
+  },
+  "variables": {
+    "color-accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#B388FF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#D4B8FF",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FAF5FC",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#141018",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E5D8EF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#3D3448",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-error": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E8486B",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#FF6B8A",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-neutral": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#8B7F99",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#9A8DAA",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1F0F3D",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1F0F3D",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-error": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#2A0A12",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-neutral": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1F1528",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1A0A14",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0F1A28",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#0F1A28",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-success": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#062018",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-on-warning": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#2A1F08",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#2A1F08",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E85D9A",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#FF7EB8",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#7EB5E8",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#9BC8F5",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-success": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#3DB88C",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#5ED4A8",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1E1824",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-surface-elevated": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F3ECF8",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#2A2233",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-text": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#1F1528",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#F5F0FA",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-text-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6B5B7A",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#A898BC",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color-warning": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E8A838",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#F5C04D",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "duration-fast": {
+      "type": "number",
+      "value": 150
+    },
+    "duration-normal": {
+      "type": "number",
+      "value": 250
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Nunito"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Nunito"
+    },
+    "radius-full": {
+      "type": "number",
+      "value": 9999
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 12
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 24
+    },
+    "shadow-lg": {
+      "type": "number",
+      "value": 24
+    },
+    "shadow-md": {
+      "type": "number",
+      "value": 12
+    },
+    "shadow-sm": {
+      "type": "number",
+      "value": 4
+    },
+    "space-1": {
+      "type": "number",
+      "value": 4
+    },
+    "space-2": {
+      "type": "number",
+      "value": 8
+    },
+    "space-3": {
+      "type": "number",
+      "value": 12
+    },
+    "space-4": {
+      "type": "number",
+      "value": 16
+    },
+    "space-5": {
+      "type": "number",
+      "value": 24
+    },
+    "space-6": {
+      "type": "number",
+      "value": 32
+    },
+    "space-8": {
+      "type": "number",
+      "value": 48
+    },
+    "text-2xl": {
+      "type": "number",
+      "value": 24
+    },
+    "text-3xl": {
+      "type": "number",
+      "value": 30
+    },
+    "text-4xl": {
+      "type": "number",
+      "value": 36
+    },
+    "text-base": {
+      "type": "number",
+      "value": 16
+    },
+    "text-lg": {
+      "type": "number",
+      "value": 18
+    },
+    "text-sm": {
+      "type": "number",
+      "value": 14
+    },
+    "text-xl": {
+      "type": "number",
+      "value": 20
+    },
+    "text-xs": {
+      "type": "number",
+      "value": 12
+    },
+    "weight-normal": {
+      "type": "string",
+      "value": "500"
+    },
+    "weight-semibold": {
+      "type": "string",
+      "value": "700"
+    }
+  }
+}

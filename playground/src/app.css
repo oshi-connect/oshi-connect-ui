@@ -1,0 +1,4 @@
+@import 'tailwindcss';
+@import '@oshi-connect/ui/theme.css';
+@source "../../node_modules/@oshi-connect/ui/dist";
+@source "../../src/lib";

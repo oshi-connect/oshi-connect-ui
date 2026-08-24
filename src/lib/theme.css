@@ -1,0 +1,200 @@
+/* utilities with dark: apply when inside html[data-theme=dark] */
+@custom-variant dark (&:is([data-theme='dark'] *));
+
+:root {
+	color-scheme: light;
+}
+html[data-theme='dark'] {
+	color-scheme: dark;
+}
+
+/* semantic tokens — align with docs/design-system.pen */
+:root {
+	--ds-color-bg: #faf5fc;
+	--ds-color-surface: #ffffff;
+	--ds-color-surface-elevated: #f3ecf8;
+	--ds-color-border: #e5d8ef;
+	--ds-color-text: #1f1528;
+	--ds-color-text-muted: #6b5b7a;
+	--ds-color-primary: #e85d9a;
+	--ds-color-on-primary: #ffffff;
+	--ds-color-secondary: #7eb5e8;
+	--ds-color-on-secondary: #0f1a28;
+	--ds-color-accent: #b388ff;
+	--ds-color-on-accent: #1f0f3d;
+	--ds-color-neutral: #8b7f99;
+	--ds-color-on-neutral: #ffffff;
+	--ds-color-success: #3db88c;
+	--ds-color-on-success: #ffffff;
+	--ds-color-warning: #e8a838;
+	--ds-color-on-warning: #2a1f08;
+	--ds-color-error: #e8486b;
+	--ds-color-on-error: #ffffff;
+	--ds-radius-sm: 0.5rem;
+	--ds-radius-md: 0.75rem;
+	--ds-radius-lg: 1rem;
+	--ds-radius-xl: 1.5rem;
+	--ds-shadow-sm: 0 1px 2px rgb(31 21 40 / 0.06);
+	--ds-shadow-md: 0 4px 12px rgb(31 21 40 / 0.1);
+	--ds-shadow-lg: 0 10px 28px rgb(31 21 40 / 0.14);
+	--ds-transition-fast: 150ms;
+	--ds-transition-normal: 250ms;
+}
+
+html[data-theme='dark'] {
+	--ds-color-bg: #141018;
+	--ds-color-surface: #1e1824;
+	--ds-color-surface-elevated: #2a2233;
+	--ds-color-border: #3d3448;
+	--ds-color-text: #f5f0fa;
+	--ds-color-text-muted: #a898bc;
+	--ds-color-primary: #ff7eb8;
+	--ds-color-on-primary: #1a0a14;
+	--ds-color-secondary: #9bc8f5;
+	--ds-color-on-secondary: #0f1a28;
+	--ds-color-accent: #d4b8ff;
+	--ds-color-on-accent: #1f0f3d;
+	--ds-color-neutral: #9a8daa;
+	--ds-color-on-neutral: #1f1528;
+	--ds-color-success: #5ed4a8;
+	--ds-color-on-success: #062018;
+	--ds-color-warning: #f5c04d;
+	--ds-color-on-warning: #2a1f08;
+	--ds-color-error: #ff6b8a;
+	--ds-color-on-error: #2a0a12;
+	--ds-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+	--ds-shadow-md: 0 4px 12px rgb(0 0 0 / 0.4);
+	--ds-shadow-lg: 0 10px 28px rgb(0 0 0 / 0.45);
+}
+
+@theme {
+	--font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+
+	--color-ds-bg: var(--ds-color-bg);
+	--color-ds-surface: var(--ds-color-surface);
+	--color-ds-surface-elevated: var(--ds-color-surface-elevated);
+	--color-ds-border: var(--ds-color-border);
+	--color-ds-text: var(--ds-color-text);
+	--color-ds-text-muted: var(--ds-color-text-muted);
+	--color-ds-primary: var(--ds-color-primary);
+	--color-ds-on-primary: var(--ds-color-on-primary);
+	--color-ds-secondary: var(--ds-color-secondary);
+	--color-ds-on-secondary: var(--ds-color-on-secondary);
+	--color-ds-accent: var(--ds-color-accent);
+	--color-ds-on-accent: var(--ds-color-on-accent);
+	--color-ds-neutral: var(--ds-color-neutral);
+	--color-ds-on-neutral: var(--ds-color-on-neutral);
+	--color-ds-success: var(--ds-color-success);
+	--color-ds-on-success: var(--ds-color-on-success);
+	--color-ds-warning: var(--ds-color-warning);
+	--color-ds-on-warning: var(--ds-color-on-warning);
+	--color-ds-error: var(--ds-color-error);
+	--color-ds-on-error: var(--ds-color-on-error);
+
+	--radius-ds-sm: var(--ds-radius-sm);
+	--radius-ds-md: var(--ds-radius-md);
+	--radius-ds-lg: var(--ds-radius-lg);
+	--radius-ds-xl: var(--ds-radius-xl);
+
+	--shadow-ds-sm: var(--ds-shadow-sm);
+	--shadow-ds-md: var(--ds-shadow-md);
+	--shadow-ds-lg: var(--ds-shadow-lg);
+
+	--transition-duration-ds-fast: var(--ds-transition-fast);
+	--transition-duration-ds-normal: var(--ds-transition-normal);
+}
+
+@layer base {
+	html {
+		font-family: var(--font-sans);
+		background-color: var(--ds-color-bg);
+		color: var(--ds-color-text);
+	}
+
+	body {
+		min-height: 100vh;
+	}
+}
+
+@keyframes ds-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes ds-slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(0.75rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes ds-scale-in {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@layer utilities {
+	.fade-in {
+		animation: ds-fade-in var(--ds-transition-normal) ease both;
+	}
+
+	.slide-up {
+		animation: ds-slide-up var(--ds-transition-normal) ease both;
+	}
+
+	.scale-in {
+		animation: ds-scale-in var(--ds-transition-normal) ease both;
+	}
+
+	.stagger-children > * {
+		animation: ds-slide-up 0.45s ease both;
+	}
+
+	.stagger-children > *:nth-child(1) {
+		animation-delay: 0ms;
+	}
+	.stagger-children > *:nth-child(2) {
+		animation-delay: 75ms;
+	}
+	.stagger-children > *:nth-child(3) {
+		animation-delay: 150ms;
+	}
+	.stagger-children > *:nth-child(4) {
+		animation-delay: 225ms;
+	}
+	.stagger-children > *:nth-child(5) {
+		animation-delay: 300ms;
+	}
+	.stagger-children > *:nth-child(6) {
+		animation-delay: 375ms;
+	}
+	.stagger-children > *:nth-child(7) {
+		animation-delay: 450ms;
+	}
+	.stagger-children > *:nth-child(8) {
+		animation-delay: 525ms;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fade-in,
+	.slide-up,
+	.scale-in,
+	.stagger-children > * {
+		animation: none !important;
+	}
+}
