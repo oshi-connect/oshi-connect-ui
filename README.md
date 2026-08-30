@@ -78,6 +78,42 @@ const theme = createThemePreference({ storageKey: 'my-app-theme' });
 <ThemeToggle storageKey="my-app-theme" defaultMode="light" />
 ```
 
+## Editor (headless)
+
+Session sketch/frame engine for hosts that are not Svelte (for example Phoenix LiveView hooks). Install `fabric` in the host when you import this entry.
+
+```ts
+import {
+  createSketchEditor,
+  disposeSketchEditor,
+  bindToolState,
+  undoLastStroke,
+  clearDrawings,
+  type UploadFn
+} from '@oshi-connect/ui/editor';
+
+const uploadSketch: UploadFn = async (blob, filename) => {
+  const body = new FormData();
+  body.append('image', blob, filename);
+  return fetch(`/api/chekis/${chekiId}/annotated`, { method: 'PUT', body });
+};
+
+const instance = createSketchEditor({
+  container,
+  canvasEl,
+  editorRoot,
+  mode: 'sketch',
+  imageUrl,
+  uploadSketch,
+  onClose: () => {},
+  onReject: (reason) => alert(reason)
+});
+
+disposeSketchEditor(instance);
+```
+
+The host must supply `UploadFn`. The kit does not call product API paths.
+
 ## Develop
 
 ```bash
