@@ -123,6 +123,23 @@ pnpm test
 pnpm dev   # playground catalog
 ```
 
+## Publish
+
+The package is published to GitHub Packages by the `Publish` workflow
+(`.github/workflows/publish.yml`). It runs when a GitHub Release is published
+and can also be triggered manually from the Actions tab. The workflow builds the
+package and runs `pnpm publish` using the built-in `GITHUB_TOKEN`, so no extra
+secret is needed.
+
+To cut a release:
+
+1. Bump the `version` in `package.json` and merge to `main`.
+2. Create a GitHub Release with a tag that matches the new version (for example
+   `v0.1.0`).
+
+The workflow then publishes `@oshi-connect/ui` to
+`https://npm.pkg.github.com`.
+
 ## Design source
 
 - `docs/design-system.pen` — Pencil source of truth
