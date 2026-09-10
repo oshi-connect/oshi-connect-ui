@@ -30,6 +30,7 @@
   "scripts": {
     "dev": "pnpm --filter @oshi-connect/ui-playground dev",
     "build": "svelte-kit sync && svelte-package && cp src/lib/theme.css dist/theme.css",
+    "prepare": "svelte-kit sync && svelte-package && cp src/lib/theme.css dist/theme.css",
     "package": "pnpm build",
     "test": "vitest run",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
