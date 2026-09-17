@@ -24,3 +24,6 @@ Follow the ecosystem constitution and local agent instructions. Add no UI copy o
 
 ## Safeguards
 Assert saved stroke widths, not just toolbar state. Cover size changes, pressure, and tool changes. Do not deploy, publish, or change production data.
+
+## CI repair
+The pnpm setup action must use the `packageManager` version in `package.json`. Remove the separate `version: 9` setting from both workflow jobs. CI must complete install, build, and tests on Node 22. Keep the package version and runtime behavior unchanged.

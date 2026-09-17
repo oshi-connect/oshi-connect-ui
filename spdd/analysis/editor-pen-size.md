@@ -22,3 +22,6 @@ Reproduce by selecting size 4, drawing a stroke, selecting size 40, and drawing 
 Both repositories use `bugfix/editor-pen-size`. The shared UI source fix must be included when preparing the app's editor vendor package. Build the UI package first, then run the app's vendor sync and asset build. The vendor directory is ignored by Git. The app's tracked bundle contains the fix.
 
 The app had unrelated local edits before this fix. Keep them out of the bugfix commits. The app bundle change must contain only the pen-size repair; preserve its existing minified format in Git. No production deployment is part of this change.
+
+## CI investigation — 2026-09-17
+Run 35206726756 failed in `pnpm/action-setup@v4`, before dependency installation. The action rejected `version: 9` because `package.json` already declares `pnpm@9.15.0`. Both jobs have this duplicate setting. Remove it from the workflow so package metadata controls the pnpm version. The failure is unrelated to the editor test assertions.
