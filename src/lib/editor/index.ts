@@ -123,16 +123,14 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 		});
 
 		let lastPointerSample: PointerSample | null = null;
-		let baseBrushSize = 10;
 
 		const brush = createPressurePencilBrush(
 			canvas,
-			() => baseBrushSize,
+			() => toolState.getBaseSize(),
 			() => lastPointerSample,
 			debugLog
 		);
 		canvas.freeDrawingBrush = brush;
-		brush.width = baseBrushSize;
 
 		const updatePointerSample = (e: PointerEvent) => {
 			lastPointerSample = {
@@ -145,13 +143,6 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 		canvas.upperCanvasEl.addEventListener('pointerdown', updatePointerSample, { passive: true });
 		canvas.upperCanvasEl.addEventListener('pointermove', updatePointerSample, { passive: true });
 
-		debugLog('brush-initialized', {
-			hasPointerEvent: typeof window.PointerEvent !== 'undefined',
-			hasOnPointerDown: 'onpointerdown' in window,
-			...PRESSURE_DEBUG_INFO,
-			baseBrushSize
-		});
-
 		const toolState = bindToolState({
 			root: editorRoot,
 			canvas,
@@ -162,6 +153,13 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 				applyOutlineBrush(brush, () => tool === 'outline');
 			},
 			debugLog
+		});
+
+		debugLog('brush-initialized', {
+			hasPointerEvent: typeof window.PointerEvent !== 'undefined',
+			hasOnPointerDown: 'onpointerdown' in window,
+			...PRESSURE_DEBUG_INFO,
+			baseBrushSize: toolState.getBaseSize()
 		});
 
 		applyOutlineBrush(brush, () => toolState.getTool() === 'outline');
