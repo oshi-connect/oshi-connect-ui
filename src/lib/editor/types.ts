@@ -1,5 +1,5 @@
 export type EditorMode = 'sketch' | 'frame' | 'signature';
-export type EditorTool = 'pencil' | 'neon' | 'outline';
+export type EditorTool = 'pencil' | 'neon' | 'outline' | 'eraser';
 
 export type UploadFn = (blob: Blob, filename: string) => Promise<Response>;
 

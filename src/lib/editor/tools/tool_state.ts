@@ -47,6 +47,12 @@ export function bindToolState(options: ToolStateOptions) {
 
 	const applyBrushStyle = () => {
 		brush.width = baseBrushSize;
+		if (currentTool === 'eraser') {
+			brush.color = '#FFFFFF';
+			brush.shadow = null;
+			debugLog?.('brush-style', { tool: currentTool, baseBrushSize, color: '#FFFFFF' });
+			return;
+		}
 		brush.color = currentColor;
 		brush.shadow =
 			currentTool === 'neon'
@@ -75,6 +81,10 @@ export function bindToolState(options: ToolStateOptions) {
 			ring.forEach((c) => btn.classList.toggle(c, isActive));
 		});
 		debugLog?.('color-changed', { color });
+		if (currentTool === 'eraser') {
+			setActiveTool('pencil');
+			return;
+		}
 		applyBrushStyle();
 	};
 
