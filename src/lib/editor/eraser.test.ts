@@ -68,15 +68,27 @@ function click(selector: string) {
 }
 
 describe('editor eraser', () => {
-	it('sets the brush to white when eraser is selected', () => {
+	it('shows a translucent brush while the eraser is selected', () => {
 		click('[data-tool="eraser"]');
-		expect(canvas.freeDrawingBrush?.color).toBe('#FFFFFF');
+		expect(canvas.freeDrawingBrush?.color).toBe('rgba(0,0,0,0.35)');
 		expect(canvas.freeDrawingBrush?.shadow).toBeNull();
+	});
+
+	it('commits an eraser path as destination-out without caching', () => {
+		click('[data-tool="eraser"]');
+		const path = new fabric.Path('M 0 0 L 8 8', {
+			stroke: 'rgba(0,0,0,0.35)',
+			objectCaching: true
+		});
+		canvas.fire('path:created', { path });
+		expect(path.globalCompositeOperation).toBe('destination-out');
+		expect(path.objectCaching).toBe(false);
+		expect(path.stroke).toBe('#000000');
 	});
 
 	it('returns to pencil when a color is chosen while erasing', () => {
 		click('[data-tool="eraser"]');
-		expect(canvas.freeDrawingBrush?.color).toBe('#FFFFFF');
+		expect(canvas.freeDrawingBrush?.color).toBe('rgba(0,0,0,0.35)');
 		click('[data-editor-action="color"]');
 		expect(canvas.freeDrawingBrush?.color).toBe('#ff0000');
 	});
