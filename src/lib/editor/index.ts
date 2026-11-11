@@ -5,8 +5,14 @@ import {
 	PRESSURE_DEBUG_INFO
 } from './brushes/pressure_pencil';
 import { FRAME_EXPORT_WIDTH, FRAME_HEIGHT, FRAME_WIDTH } from './constants';
-import { clearDrawings, exportFrame, exportSketch, undoLastStroke } from './export/sketch_export';
+import { clearDrawings, exportFrame, undoLastStroke } from './export/sketch_export';
 import { loadFrameImageOntoCanvas } from './frame_image';
+import {
+	applySketch,
+	sketchDocumentFromJson,
+	submitSketch,
+	type SketchUpload
+} from './sketch_document';
 import { loadSvgOntoCanvas } from './svg/signature';
 import { bindActionButtons, bindToolState } from './tools/tool_state';
 import type {
@@ -23,8 +29,22 @@ export type {
 	FabricObjectWithFrame,
 	UploadFn
 } from './types';
+export type {
+	Composite,
+	PathCommand,
+	SketchDocument,
+	SketchStroke,
+	SketchSubmission,
+	SketchUpload
+} from './sketch_document';
 export { DEFAULT_COLOR, DEFAULT_ACTIVE_CLASSES, PALETTE_COLORS, SKETCH_SIZES } from './constants';
 export { clearDrawings, undoLastStroke, exportSketch, exportFrame } from './export/sketch_export';
+export {
+	applySketch,
+	captureSketch,
+	stampEraserPath,
+	submitSketch
+} from './sketch_document';
 export { bindToolState, bindActionButtons } from './tools/tool_state';
 export type { ToolStateOptions, ToolStateVariant } from './tools/tool_state';
 export { validateFrameFile } from './validate_frame';
@@ -36,11 +56,12 @@ export interface SketchEditorConfig {
 	editorRoot: ParentNode;
 	mode: 'sketch' | 'frame';
 	imageUrl?: string;
+	sketchDocumentJson?: string;
 	chekiId?: string;
 	sessionId?: string;
 	frameUrl?: string;
 	referenceUrl?: string;
-	uploadSketch?: UploadFn;
+	uploadSketch?: SketchUpload;
 	uploadFrame?: UploadFn;
 	onClose: () => void;
 	onReject?: (reason: string) => void;
@@ -63,6 +84,7 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 		editorRoot,
 		mode,
 		imageUrl,
+		sketchDocumentJson,
 		chekiId,
 		sessionId,
 		frameUrl,
@@ -119,20 +141,19 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 		const canvas = new fabric.Canvas(canvasEl, {
 			isDrawingMode: true,
 			width: canvasW,
-			height: canvasH
+			height: canvasH,
+			...(mode === 'sketch' ? { backgroundColor: 'rgba(0,0,0,0)' } : {})
 		});
 
 		let lastPointerSample: PointerSample | null = null;
-		let baseBrushSize = 10;
 
 		const brush = createPressurePencilBrush(
 			canvas,
-			() => baseBrushSize,
+			() => toolState.getBaseSize(),
 			() => lastPointerSample,
 			debugLog
 		);
 		canvas.freeDrawingBrush = brush;
-		brush.width = baseBrushSize;
 
 		const updatePointerSample = (e: PointerEvent) => {
 			lastPointerSample = {
@@ -144,13 +165,6 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 
 		canvas.upperCanvasEl.addEventListener('pointerdown', updatePointerSample, { passive: true });
 		canvas.upperCanvasEl.addEventListener('pointermove', updatePointerSample, { passive: true });
-
-		debugLog('brush-initialized', {
-			hasPointerEvent: typeof window.PointerEvent !== 'undefined',
-			hasOnPointerDown: 'onpointerdown' in window,
-			...PRESSURE_DEBUG_INFO,
-			baseBrushSize
-		});
 
 		const toolState = bindToolState({
 			root: editorRoot,
@@ -164,9 +178,22 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 			debugLog
 		});
 
+		debugLog('brush-initialized', {
+			hasPointerEvent: typeof window.PointerEvent !== 'undefined',
+			hasOnPointerDown: 'onpointerdown' in window,
+			...PRESSURE_DEBUG_INFO,
+			baseBrushSize: toolState.getBaseSize()
+		});
+
 		applyOutlineBrush(brush, () => toolState.getTool() === 'outline');
 
-		if (img) {
+		if (mode === 'sketch') {
+			if (img) {
+				img.style.width = `${canvasW}px`;
+				img.style.height = `${canvasH}px`;
+			}
+			applySketch(canvas, sketchDocumentFromJson(sketchDocumentJson), canvasW, canvasH);
+		} else if (img) {
 			const fabricImg = new fabric.Image(img);
 			fabricImg.scaleToWidth(canvasW);
 			canvas.setBackgroundImage(fabricImg, canvas.renderAll.bind(canvas), {
@@ -359,7 +386,12 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 						if (response && response.ok) onClose();
 						else if (response) reject('Failed to save frame');
 					} else if (img && uploadSketch) {
-						const response = await exportSketch(canvas, img, canvasW, uploadSketch);
+						const response = await submitSketch({
+							canvas,
+							photo: img,
+							canvasWidth: canvas.getWidth(),
+							upload: uploadSketch
+						});
 						if (response.ok) onClose();
 						else reject('Failed to upload');
 					}
@@ -391,6 +423,10 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 				});
 				obj.setCoords();
 			});
+			if (mode === 'sketch' && img) {
+				img.style.width = `${newW}px`;
+				img.style.height = `${newH}px`;
+			}
 			canvasW = newW;
 			canvasH = newH;
 			canvas.renderAll();
@@ -403,11 +439,12 @@ export function createSketchEditor(config: SketchEditorConfig): SketchEditorInst
 	if (mode === 'frame') {
 		setupEditor(FRAME_WIDTH, FRAME_HEIGHT, null);
 	} else {
-		const img = new Image();
-		img.crossOrigin = 'anonymous';
-		img.onload = () => setupEditor(img.width, img.height, img);
-		img.onerror = () => reject('Failed to load cheki image.');
-		img.src = imageUrl!;
+		const photo =
+			container.querySelector<HTMLImageElement>('[data-role="sketch-photo"]') ?? new Image();
+		photo.crossOrigin = 'anonymous';
+		photo.onload = () => setupEditor(photo.naturalWidth, photo.naturalHeight, photo);
+		photo.onerror = () => reject('Failed to load cheki image.');
+		photo.src = imageUrl!;
 	}
 
 	return instance;

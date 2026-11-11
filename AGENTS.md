@@ -2,6 +2,8 @@
 
 Shared Svelte 5 component kit (`@oshi-connect/ui`).
 
+Follow `.cursor/rules/constitution.mdc` in this repository. Cloud Agents and Grok Bot read that file. This file may be stricter. It must not be looser.
+
 ## Stack
 
 - Svelte 5, `@sveltejs/package`

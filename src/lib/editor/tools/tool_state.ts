@@ -1,5 +1,6 @@
 import { fabric } from '../fabric_loader';
 import { DEFAULT_ACTIVE_CLASSES, DEFAULT_COLOR } from '../constants';
+import { stampEraserPath } from '../sketch_document';
 import type { ActiveClassSet, EditorTool } from '../types';
 
 export type ToolStateVariant = 'sketch' | 'signature';
@@ -47,6 +48,12 @@ export function bindToolState(options: ToolStateOptions) {
 
 	const applyBrushStyle = () => {
 		brush.width = baseBrushSize;
+		if (currentTool === 'eraser') {
+			brush.color = 'rgba(0,0,0,0.35)';
+			brush.shadow = null;
+			debugLog?.('brush-style', { tool: currentTool, baseBrushSize, color: 'rgba(0,0,0,0.35)' });
+			return;
+		}
 		brush.color = currentColor;
 		brush.shadow =
 			currentTool === 'neon'
@@ -75,6 +82,10 @@ export function bindToolState(options: ToolStateOptions) {
 			ring.forEach((c) => btn.classList.toggle(c, isActive));
 		});
 		debugLog?.('color-changed', { color });
+		if (currentTool === 'eraser') {
+			setActiveTool('pencil');
+			return;
+		}
 		applyBrushStyle();
 	};
 
@@ -116,6 +127,11 @@ export function bindToolState(options: ToolStateOptions) {
 
 	sizeButtons.forEach((btn) => {
 		btn.onclick = () => setActiveSize(parseInt(btn.dataset.size!, 10));
+	});
+
+	canvas.on('path:created', (options: { path?: fabric.Object }) => {
+		if (currentTool !== 'eraser' || options.path?.type !== 'path') return;
+		stampEraserPath(options.path as fabric.Path);
 	});
 
 	setActiveTool(defaultTool);
