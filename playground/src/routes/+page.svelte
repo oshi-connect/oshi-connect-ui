@@ -4,6 +4,7 @@
 		Badge,
 		Button,
 		Card,
+		ColorPicker,
 		Input,
 		Modal,
 		Select,
@@ -13,6 +14,8 @@
 	} from '@oshi-connect/ui';
 
 	let modalOpen = $state(false);
+	let color = $state('#e85d9a');
+	let scaledColor = $state('#7eb5e8');
 
 	const selectOptions = [
 		{ value: 'a', label: 'Option A' },
@@ -66,6 +69,21 @@
 		<div class="grid gap-4 sm:grid-cols-2">
 			<Input label="Name" placeholder="Enter name" />
 			<Select label="Choice" options={selectOptions} value="a" />
+		</div>
+	</section>
+
+	<section class="space-y-4">
+		<h2 class="text-lg font-semibold">ColorPicker</h2>
+		<div class="grid gap-4 sm:grid-cols-3">
+			<ColorPicker label="Color" bind:value={color} />
+			<!-- the panel is in the top layer, so it is not scaled or clipped by this box -->
+			<div
+				class="origin-top-left overflow-hidden rounded-ds-md border-2 border-ds-border p-3"
+				style="transform: scale(0.75)"
+			>
+				<ColorPicker label="Scaled" bind:value={scaledColor} />
+			</div>
+			<ColorPicker label="Disabled" value="#3db88c" disabled />
 		</div>
 	</section>
 
