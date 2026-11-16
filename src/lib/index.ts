@@ -2,6 +2,7 @@ export { default as Avatar } from './components/Avatar.svelte';
 export { default as Badge } from './components/Badge.svelte';
 export { default as Button } from './components/Button.svelte';
 export { default as Card } from './components/Card.svelte';
+export { default as ColorPicker } from './components/ColorPicker.svelte';
 export { default as Combobox } from './components/Combobox.svelte';
 export { default as DateTimeField } from './components/DateTimeField.svelte';
 export { default as Dropdown } from './components/Dropdown.svelte';
@@ -23,6 +24,7 @@ export {
 	type ToastVariant
 } from './components/toast-state';
 export { cn } from './components/cn';
+export type { Hsv } from './components/color';
 export { nextDomId } from './components/next-id';
 export {
 	createThemePreference,
