@@ -17,6 +17,7 @@
 		onclick?: (e: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) => void;
 		'aria-expanded'?: boolean;
 		'aria-haspopup'?: boolean | 'true' | 'false' | 'menu' | 'dialog';
+		'aria-label'?: string;
 	}
 
 	let {
@@ -31,7 +32,8 @@
 		children,
 		onclick,
 		'aria-expanded': ariaExpanded,
-		'aria-haspopup': ariaHaspopup
+		'aria-haspopup': ariaHaspopup,
+		'aria-label': ariaLabel
 	}: Props = $props();
 
 	const busy = $derived(disabled || loading);
@@ -65,6 +67,7 @@
 		aria-busy={loading}
 		aria-expanded={ariaExpanded}
 		aria-haspopup={ariaHaspopup}
+		aria-label={ariaLabel || tooltip}
 		onclick={onclick}
 	>
 		{#if loading}

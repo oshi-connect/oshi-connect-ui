@@ -60,4 +60,15 @@ describe('Button', () => {
 		expect(screen.getByRole('button').getAttribute('title')).toBe('Assets');
 		expect(screen.queryByRole('tooltip')).toBeNull();
 	});
+
+	it('uses tooltip as accessible name when set', () => {
+		render(Button, { props: { tooltip: 'Assets' } });
+		expect(screen.getByRole('button', { name: 'Assets' })).toBeTruthy();
+	});
+
+	it('prefers explicit aria-label over tooltip for accessible name', () => {
+		render(Button, { props: { tooltip: 'Assets', 'aria-label': 'Override' } });
+		expect(screen.getByRole('button', { name: 'Override' })).toBeTruthy();
+		expect(screen.queryByRole('button', { name: 'Assets' })).toBeNull();
+	});
 });
