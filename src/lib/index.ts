@@ -14,7 +14,7 @@ export { default as Spinner } from './components/Spinner.svelte';
 export { default as Textarea } from './components/Textarea.svelte';
 export { default as ThemeToggle } from './components/ThemeToggle.svelte';
 export { default as ToastRegion } from './components/ToastRegion.svelte';
-export { default as Tooltip } from './components/Tooltip.svelte';
+export { default as Tooltip, type TooltipPlacement } from './components/Tooltip.svelte';
 export type { SelectOption } from './components/form.types';
 export {
 	clearToasts,

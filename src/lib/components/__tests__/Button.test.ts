@@ -42,4 +42,50 @@ describe('Button', () => {
 		expect(button.getAttribute('aria-busy')).toBe('true');
 		expect((button as HTMLButtonElement).disabled).toBe(true);
 	});
+
+	it('renders a tooltip when tooltip text is set', () => {
+		render(Button, { props: { tooltip: 'Assets' } });
+		expect(screen.getByRole('tooltip').textContent).toBe('Assets');
+	});
+
+	it('places the tooltip below the control when tooltipPlacement is bottom', () => {
+		render(Button, { props: { tooltip: 'Assets', tooltipPlacement: 'bottom' } });
+		const tip = screen.getByRole('tooltip');
+		expect(tip.className).toContain('top-full');
+		expect(tip.className).not.toContain('bottom-full');
+	});
+
+	it('forwards right and bottom-end placements to the tooltip', () => {
+		render(Button, { props: { tooltip: 'Assets', tooltipPlacement: 'right' } });
+		expect(screen.getByRole('tooltip').className).toContain('left-full');
+		cleanup();
+		render(Button, { props: { tooltip: 'Save', tooltipPlacement: 'bottom-end' } });
+		const tip = screen.getByRole('tooltip');
+		expect(tip.className).toContain('right-0');
+		expect(tip.className).toContain('top-full');
+	});
+
+	it('omits native title when tooltip is set', () => {
+		render(Button, { props: { tooltip: 'Assets', title: 'ignored' } });
+		const button = screen.getByRole('button');
+		expect(button.getAttribute('title')).toBeNull();
+		expect(screen.getByRole('tooltip').textContent).toBe('Assets');
+	});
+
+	it('keeps native title when tooltip is absent', () => {
+		render(Button, { props: { title: 'Assets' } });
+		expect(screen.getByRole('button').getAttribute('title')).toBe('Assets');
+		expect(screen.queryByRole('tooltip')).toBeNull();
+	});
+
+	it('uses tooltip as accessible name when set', () => {
+		render(Button, { props: { tooltip: 'Assets' } });
+		expect(screen.getByRole('button', { name: 'Assets' })).toBeTruthy();
+	});
+
+	it('prefers explicit aria-label over tooltip for accessible name', () => {
+		render(Button, { props: { tooltip: 'Assets', 'aria-label': 'Override' } });
+		expect(screen.getByRole('button', { name: 'Override' })).toBeTruthy();
+		expect(screen.queryByRole('button', { name: 'Assets' })).toBeNull();
+	});
 });
