@@ -2,7 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import { cn } from './cn';
 	import Spinner from './Spinner.svelte';
-	import Tooltip from './Tooltip.svelte';
+	import Tooltip, { type TooltipPlacement } from './Tooltip.svelte';
 
 	interface Props {
 		variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
@@ -11,7 +11,7 @@
 		disabled?: boolean;
 		title?: string;
 		tooltip?: string;
-		tooltipPlacement?: 'top' | 'bottom';
+		tooltipPlacement?: TooltipPlacement;
 		loading?: boolean;
 		class?: string;
 		children?: Snippet;

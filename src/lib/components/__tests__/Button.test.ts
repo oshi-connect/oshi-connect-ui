@@ -55,6 +55,16 @@ describe('Button', () => {
 		expect(tip.className).not.toContain('bottom-full');
 	});
 
+	it('forwards right and bottom-end placements to the tooltip', () => {
+		render(Button, { props: { tooltip: 'Assets', tooltipPlacement: 'right' } });
+		expect(screen.getByRole('tooltip').className).toContain('left-full');
+		cleanup();
+		render(Button, { props: { tooltip: 'Save', tooltipPlacement: 'bottom-end' } });
+		const tip = screen.getByRole('tooltip');
+		expect(tip.className).toContain('right-0');
+		expect(tip.className).toContain('top-full');
+	});
+
 	it('omits native title when tooltip is set', () => {
 		render(Button, { props: { tooltip: 'Assets', title: 'ignored' } });
 		const button = screen.getByRole('button');

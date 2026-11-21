@@ -41,6 +41,25 @@ describe('Tooltip', () => {
 		expect(cls).toContain('group-focus-within:opacity-100');
 	});
 
+	it('places the tip to the right of the trigger, vertically centered', () => {
+		render(Tooltip, { props: { text: 'why', placement: 'right', children: trigger } });
+		const cls = screen.getByRole('tooltip').className;
+		expect(cls).toContain('left-full');
+		expect(cls).toContain('top-1/2');
+		expect(cls).toContain('-translate-y-1/2');
+		expect(cls).not.toContain('left-1/2');
+		expect(cls).not.toContain('bottom-full');
+	});
+
+	it('places the tip below the trigger, aligned to its end', () => {
+		render(Tooltip, { props: { text: 'why', placement: 'bottom-end', children: trigger } });
+		const cls = screen.getByRole('tooltip').className;
+		expect(cls).toContain('top-full');
+		expect(cls).toContain('right-0');
+		expect(cls).not.toContain('left-1/2');
+		expect(cls).not.toContain('-translate-x-1/2');
+	});
+
 	// an enabled button needs no explanation, and an empty bubble is worse than none
 	it('renders nothing extra when there is no text', () => {
 		const { container } = render(Tooltip, { props: { children: trigger } });
