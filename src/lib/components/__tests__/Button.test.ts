@@ -48,6 +48,13 @@ describe('Button', () => {
 		expect(screen.getByRole('tooltip').textContent).toBe('Assets');
 	});
 
+	it('places the tooltip below the control when tooltipPlacement is bottom', () => {
+		render(Button, { props: { tooltip: 'Assets', tooltipPlacement: 'bottom' } });
+		const tip = screen.getByRole('tooltip');
+		expect(tip.className).toContain('top-full');
+		expect(tip.className).not.toContain('bottom-full');
+	});
+
 	it('omits native title when tooltip is set', () => {
 		render(Button, { props: { tooltip: 'Assets', title: 'ignored' } });
 		const button = screen.getByRole('button');

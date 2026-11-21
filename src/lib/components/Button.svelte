@@ -11,6 +11,7 @@
 		disabled?: boolean;
 		title?: string;
 		tooltip?: string;
+		tooltipPlacement?: 'top' | 'bottom';
 		loading?: boolean;
 		class?: string;
 		children?: Snippet;
@@ -27,6 +28,7 @@
 		disabled = false,
 		title,
 		tooltip,
+		tooltipPlacement = 'top',
 		loading = false,
 		class: className,
 		children,
@@ -82,7 +84,7 @@
 {/snippet}
 
 {#if tooltip}
-	<Tooltip text={tooltip}>
+	<Tooltip text={tooltip} placement={tooltipPlacement}>
 		{@render control(undefined)}
 	</Tooltip>
 {:else}
