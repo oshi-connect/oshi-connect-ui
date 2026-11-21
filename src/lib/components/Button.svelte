@@ -2,6 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import { cn } from './cn';
 	import Spinner from './Spinner.svelte';
+	import Tooltip from './Tooltip.svelte';
 
 	interface Props {
 		variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
@@ -9,6 +10,7 @@
 		type?: 'button' | 'submit' | 'reset';
 		disabled?: boolean;
 		title?: string;
+		tooltip?: string;
 		loading?: boolean;
 		class?: string;
 		children?: Snippet;
@@ -23,6 +25,7 @@
 		type = 'button',
 		disabled = false,
 		title,
+		tooltip,
 		loading = false,
 		class: className,
 		children,
@@ -37,12 +40,10 @@
 		'inline-flex select-none items-center justify-center gap-2 rounded-ds-md font-semibold transition-opacity duration-ds-fast focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ds-primary disabled:pointer-events-none disabled:opacity-50';
 
 	const variants = {
-		primary:
-			'bg-ds-primary text-ds-on-primary shadow-ds-sm hover:opacity-90 active:opacity-80',
+		primary: 'bg-ds-primary text-ds-on-primary shadow-ds-sm hover:opacity-90 active:opacity-80',
 		secondary:
 			'bg-ds-secondary text-ds-on-secondary shadow-ds-sm hover:opacity-90 active:opacity-80',
-		ghost:
-			'border-2 border-ds-primary bg-transparent text-ds-primary hover:bg-ds-surface-elevated',
+		ghost: 'border-2 border-ds-primary bg-transparent text-ds-primary hover:bg-ds-surface-elevated',
 		danger: 'bg-ds-error text-ds-on-error shadow-ds-sm hover:opacity-90 active:opacity-80'
 	} as const;
 
@@ -55,22 +56,32 @@
 	const spinnerSize = $derived(size === 'lg' ? 'md' : size === 'sm' ? 'sm' : 'md');
 </script>
 
-<button
-	{type}
-	class={cn(base, variants[variant], sizes[size], className)}
-	{title}
-	disabled={busy}
-	aria-busy={loading}
-	aria-expanded={ariaExpanded}
-	aria-haspopup={ariaHaspopup}
-	onclick={onclick}
->
-	{#if loading}
-		<Spinner
-			size={spinnerSize}
-			variant={variant === 'ghost' ? 'primary' : 'inherit'}
-			aria-hidden={true}
-		/>
-	{/if}
-	{@render children?.()}
-</button>
+{#snippet control(nativeTitle: string | undefined)}
+	<button
+		{type}
+		class={cn(base, variants[variant], sizes[size], className)}
+		title={nativeTitle}
+		disabled={busy}
+		aria-busy={loading}
+		aria-expanded={ariaExpanded}
+		aria-haspopup={ariaHaspopup}
+		onclick={onclick}
+	>
+		{#if loading}
+			<Spinner
+				size={spinnerSize}
+				variant={variant === 'ghost' ? 'primary' : 'inherit'}
+				aria-hidden={true}
+			/>
+		{/if}
+		{@render children?.()}
+	</button>
+{/snippet}
+
+{#if tooltip}
+	<Tooltip text={tooltip}>
+		{@render control(undefined)}
+	</Tooltip>
+{:else}
+	{@render control(title)}
+{/if}

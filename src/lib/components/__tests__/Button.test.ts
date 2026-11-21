@@ -42,4 +42,22 @@ describe('Button', () => {
 		expect(button.getAttribute('aria-busy')).toBe('true');
 		expect((button as HTMLButtonElement).disabled).toBe(true);
 	});
+
+	it('renders a tooltip when tooltip text is set', () => {
+		render(Button, { props: { tooltip: 'Assets' } });
+		expect(screen.getByRole('tooltip').textContent).toBe('Assets');
+	});
+
+	it('omits native title when tooltip is set', () => {
+		render(Button, { props: { tooltip: 'Assets', title: 'ignored' } });
+		const button = screen.getByRole('button');
+		expect(button.getAttribute('title')).toBeNull();
+		expect(screen.getByRole('tooltip').textContent).toBe('Assets');
+	});
+
+	it('keeps native title when tooltip is absent', () => {
+		render(Button, { props: { title: 'Assets' } });
+		expect(screen.getByRole('button').getAttribute('title')).toBe('Assets');
+		expect(screen.queryByRole('tooltip')).toBeNull();
+	});
 });
