@@ -101,9 +101,21 @@
 			<Button onclick={() => (modalOpen = true)}>Open modal</Button>
 			<Button
 				variant="secondary"
-				onclick={() => toasts.push({ variant: 'success', message: 'Saved' })}
+				onclick={() => toasts.push({ variant: 'success', message: 'Saved' }, 0)}
 			>
-				Show toast
+				Success
+			</Button>
+			<Button
+				variant="secondary"
+				onclick={() => toasts.push({ variant: 'error', message: 'Could not save' }, 0)}
+			>
+				Error
+			</Button>
+			<Button
+				variant="ghost"
+				onclick={() => toasts.push({ variant: 'info', message: 'Connected' }, 0)}
+			>
+				Info
 			</Button>
 		</div>
 		<Modal open={modalOpen} title="Dialog" onclose={() => (modalOpen = false)}>
